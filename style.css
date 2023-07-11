@@ -20,7 +20,14 @@ body {
   /*overflow-y: scroll;
   scroll-snap-type: y mandatory;*/
 }
-  
+
+section {
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* --- TOP SECTION ---*/
+
  #top-sec {
     /*scroll-snap-align: start;*/
     background-color: white;
@@ -33,10 +40,102 @@ body {
     height: 100vh; 
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:flex-start;
     align-items: center;
     padding: 0 20px;
   }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+    border: solid black 1px;
+  }
+
+  .title {
+    padding-top: 10%;
+    padding-bottom: 3%;
+    width: 66%;
+    font-size: 25px;
+    text-align: center;
+    border: solid green 1px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    text-align: center;
+    border: solid red 1px;
+  }
+  
+  .navbar {
+    /*position: fixed;
+    top: 75px;
+    z-index: 1;*/
+    display: flex;
+    width: 100%;
+    border: solid blue 1px;
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .navbar ul li {
+    margin: 0 10px;
+    padding: 10px;
+  }
+  
+  .navbar ul li a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .navbar ul li a:hover{
+    color: #707070;
+    text-decoration: line-through;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 66%;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20%;
+    margin-bottom: 0;
+    border: solid black 1px;
+  }
+
+  .grid-item {
+    padding: 10px;
+    width: 150px;
+  }
+  
+  .gi-loc {
+    font-size: 10px;
+  }
+
+  .gi-event {
+    border-bottom: 3px #333 solid;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .gi-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+/* --- MID SECTION ---*/
 
   #mid-sec {
     background-color: #333;
@@ -64,6 +163,8 @@ body {
     text-align: center;
   }
 
+/* --- BOTTOM SECTION ---*/
+
   #bot-sec {
     background-color:white ;
     /*background-image: url("./img/bot.jpg");*/
@@ -86,115 +187,11 @@ body {
   #bot-sec ul{
     padding-bottom: 20px;
   }
-
-  #end {
-    background-color: #333;
-    height: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #end h5{
-    color: white;
-    margin-bottom: 15px;
-  }
-
-  .logo {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  .title {
-    padding-top: 10%;
-    padding-bottom: 3%;
-    width: 66%;
-    font-size: 25px;
-    text-align: center;
-  }
-
-  .subtitle {
-    font-size: 20px;
-    text-align: center;
-  }
   
-  .navbar {
-    /*position: fixed;
-    top: 75px;
-    z-index: 1;*/
-    display: flex;
-    width: 100%;
-  }
-
-  .navbar ul {
-    display: flex;
-    list-style: none;
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .navbar ul li {
-    margin: 0 10px;
-    padding: 10px;
-  }
-  
-  .navbar ul li a {
-    color: #000;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
-  .navbar ul li a:hover{
-    color: #707070;
-    text-decoration: line-through;
-  }
-
-  section {
-    width: 100%;
-    padding: 0 20px;
-  }
-
-  .grid-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 66%;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 150px;
-    margin-bottom: 0;
-  }
-
-  .grid-item {
-    padding: 10px;
-    width: 150px;
-  }
-  
-  .gi-loc {
-    font-size: 10px;
-  }
-
-  .gi-event {
-    border-bottom: 3px #333 solid;
-    font-size: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-
-  .gi-link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
-  }
-
   .org-grid {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 15px;
     width: 66%;
@@ -218,6 +215,22 @@ body {
 
   .oi-aff p{
     padding-bottom: 10px;
+  }
+
+/* --- END SECTION ---*/
+
+  #end {
+    background-color: #333;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #end h5{
+    color: white;
+    margin-bottom: 15px;
   }
 
   .social-grid {
