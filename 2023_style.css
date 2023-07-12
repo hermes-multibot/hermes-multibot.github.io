@@ -1,5 +1,6 @@
 @import "./style.css";
 
+/*--- BANNER ---*/
 #banner {
     background-color: var(--hermes-bg);
     width: 100%;
@@ -49,7 +50,6 @@
     justify-content: center;
     align-items: flex-start;
     gap: 35px;
-    border: red 1px solid;
 }
 
 .details-grid-item {
@@ -61,13 +61,11 @@
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    border: green 1px solid;
   }
 
   .dgi-icon {
     height: 55px;
     text-align: center;
-    border: blue 1px solid;
   }
 
   .dgi-title {
@@ -90,8 +88,272 @@
     margin-top: 20px;
   }
 
+/*--- INVITED SPEAKERS---*/
+
+  #invited-speakers {
+    display: flex;
+    flex-flow: column; 
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(./img/2023/speakers-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+
+  #invited-speakers h2{
+    padding: 35px 0 15px 0;
+  }
+
+  .speakers-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .speakers-grid-item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    height: 350px;
+  }
+
+  .sgi-pic img {
+    width: 100%;
+  }
+  
+  .sgi-name {
+    font-weight: bold;
+    padding: 10px 5px 0 5px;
+  }
+
+  .sgi-role {
+    padding: 10px 5px 0 5px;
+  }
+
+  .sgi-affiliation {
+    padding: 0 5px 10px 5px;
+  }
+
+/*--- PROGRAM---*/
+
+  #program {
+    display: flex;
+    flex-flow: column; 
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  #program h2{
+    padding: 35px 0 10px 0;
+  }
+
+  .program-grid {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 66%;
+  }
+
+  .program-grid-item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    border-bottom: 2px solid var(--hermes-green);
+  }
+
+  .pgi-session {
+    padding: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--hermes-pink);
+  }
+
+  .pgi-session-cfp {
+    padding: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--hermes-green);
+  }
+
+  .pgi-chair {
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  .pgi-title {
+    padding-top: 10px;
+    padding-bottom: 4px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .pgi-speaker{
+    font-size: 16px;
+  }
+
+  .pgi-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .pgi-media {
+    font-weight: bold;
+    color: var(--hermes-pink);
+  }
+
+  .pgi-break {
+    padding: 20px 0;
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  /*--- SPONSORS---*/
+ 
+  #sponsors {
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(var(--hermes-pink), var(--hermes-green)), url(./img/2023/nasa-polar-robotic-range-cropped.png);
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-color: var(--hermes-green);
+    background-size: cover;
+    background-position: 60%;
+  }
+
+  .sponsor-grid {
+    width: 66%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sponsor-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .sponsor-header h2{
+    padding: 35px 0 15px 0;
+  }
+
+  .sponsor-grid p{
+    padding: 20px;
+  }
+
+  .sponsor-logos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .sponsor-logos img{
+    width: 200px;
+  }
+
+/*--- OBJECTIVES AND TOPICS ---*/
+
+  #objectives {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--hermes-bg);
+    text-shadow: 1px 1px var(--hermes-text);
+    width: 100%;
+    background-image: linear-gradient(var(--hermes-pink),var(--hermes-text)), url(./img/RAT_rover_by_night.jpg);
+    background-blend-mode: darken;
+    /*  normal	This is default. Sets the blending mode to normal	
+        multiply	Sets the blending mode to multiply	
+        screen	Sets the blending mode to screen	
+        overlay	Sets the blending mode to overlay	
+        darken	Sets the blending mode to darken	
+        lighten	Sets the blending mode to lighten	
+        color-dodge	Sets the blending mode to color-dodge	
+        saturation	Sets the blending mode to saturation	
+        color	Sets the blending mode to color	
+        luminosity	Sets the blending mode to luminosity
+    */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  #topics {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #objectives h2, #topics h2{
+    padding: 35px 0 15px 0;
+  }
+
+  .objectives-header{
+    width: 66%;
+    padding: 15px 0 30px 0;
+  }
+
+  #objectives ul {
+    display: flex;
+    list-style: none;
+    width: 66%;
+    justify-content: center;
+    gap: 0;
+    padding-bottom: 20px;
+  }
+  
+  #objectives ul li {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 33%;
+    height: 175px;
+  }
+
+  #topics ul{
+    width: 66%;
+    padding: 20px 0 35px 0;
+  }
+
+  #topics ul li {
+    padding: 5px;
+  }
 
 
+
+
+  
 
 @media screen and (max-width: 600px) {
     #banner img{

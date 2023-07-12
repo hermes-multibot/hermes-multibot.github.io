@@ -313,8 +313,13 @@ button:focus {
     width: 25px;
   }
 
+  .social-icon:hover{
+    filter: invert(40%);
+  }
+
   .social-icon img{
     width: 100%;
   }
+
   
   
