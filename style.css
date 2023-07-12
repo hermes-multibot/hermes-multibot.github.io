@@ -252,6 +252,10 @@ button:focus {
     line-height: 20px;
   }
   
+  #bot-sec ul li{
+    padding: 3px 0;
+  }
+
   .org-grid {
     display: flex;
     flex-flow: row wrap;

@@ -154,6 +154,15 @@
     padding: 35px 0 10px 0;
   }
 
+  #program a{
+    text-decoration: none;
+    color:var(--hermes-pink);
+  }
+
+  #program a:hover{
+    color: var(--hermes-hover);
+  }
+
   .program-grid {
     display: flex;
     flex-flow: column nowrap;
