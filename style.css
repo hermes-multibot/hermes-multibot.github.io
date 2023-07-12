@@ -123,6 +123,7 @@ button:focus {
 
   .navbar ul {
     display: flex;
+    flex-flow: row wrap;
     list-style: none;
     width: 100%;
     justify-content: center;
@@ -221,7 +222,7 @@ button:focus {
 
   #mid-sec p{
     padding: 5px 0;
-    text-shadow: 2px 2px var(--hermes-text);
+    text-shadow: 1px 1px var(--hermes-text);
     text-align: center;
   }
 
@@ -324,6 +325,52 @@ button:focus {
   .social-icon img{
     width: 100%;
   }
+
+/* Responsive PHONE */
+  @media screen and (max-width: 850px) {
+    .title{
+      font-size: 22px;
+      width: 90%;
+    }
+    .subtitle {
+      font-size: 18px;
+    }
+    .grid-container {
+      width: 90%;
+    }
+    .about-text {
+      width: 90%;
+    }
+    .navbar ul {
+      gap: 5px;
+    }
+    .navbar ul li {
+      margin: 0 5px;
+      padding: 2px 2px 10px 2px;
+    }
+    .org-grid {
+      gap: 5px;
+      width: 90%;
+    }
+    .org-item {
+      padding: 10px;
+      width: 125px;
+      height: 250px;
+    }
+    .oi-name p{
+      font-size: 14px;
+    }
+    .oi-aff p{
+      font-size: 14px;
+    }
+    #bot-sec ul{
+      line-height: 15px;
+    }
+    #bot-sec ul li{
+      font-size: 14px;;
+    }
+  
+}
 
   
   

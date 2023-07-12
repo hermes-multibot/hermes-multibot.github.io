@@ -21,6 +21,7 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 20px;
     color: var(--hermes-text);
 }
@@ -333,9 +334,11 @@
 
   #objectives ul {
     display: flex;
+    flex-flow: row wrap;
     list-style: none;
     width: 66%;
     justify-content: center;
+    align-items: center;
     gap: 0;
     padding-bottom: 20px;
   }
@@ -346,7 +349,7 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    width: 33%;
+    width: 30%;
     height: 175px;
   }
 
@@ -360,12 +363,132 @@
   }
 
 
-
-
-  
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
     #banner img{
-        width: 66%;
+        width: 100%;
     }
+  #basic-info h1{
+      font-size: 22px;   
+  }
+  #basic-info h2{
+      font-size: 16px;
+  }
+  #basic-info h3{
+    font-size: 14px;
+  }
+  .details-grid{
+      width: 90%;
+      gap: 5px;
+  }
+  .details-grid-item {
+      margin: 10px 0;
+      width: 200px;
+    }
+    .dgi-title {
+      font-size: 14px;
+      padding: 2px 0;
+    }
+    .dgi-info {
+      font-size: 14px;
+      line-height: 15px;
+      height: 100px;
+    }
+    .dgi-button {
+      margin-top: 5px;
+    }
+    #invited-speakers h2{
+      padding-top: 80px;
+    }
+    .speakers-grid {
+      padding-bottom: 100px;
+    }
+    .speakers-grid-item {
+      padding: 5px;
+      width: 200px;
+      height: 280px;
+    }
+    .sgi-name {
+      font-size: 14px;
+      padding: 3px 5px 0 5px;
+    }
+    .sgi-role {
+      font-size: 14px;
+      padding: 3px 5px 0 5px;
+    }
+    .sgi-affiliation {
+      font-size: 14px;
+      padding: 0 5px 5px 5px;
+    }
+    #program h2{
+      padding: 5px 0 10px 0;
+    }
+    .program-grid {
+      width: 90%;
+    }
+    .pgi-session {
+      font-size: 16px;
+    } 
+    .pgi-session-cfp {
+      font-size: 16px;
+    }
+    .pgi-chair {
+      font-size: 12px;
+    }
+    .pgi-title {
+      font-size: 16px;
+    }
+    .pgi-speaker{
+      font-size: 14px;
+    }
+    .pgi-info {
+      font-size: 14px;
+    }
+    .pgi-media {
+      padding-bottom: 10px;
+    }
+    .pgi-break {
+      font-size: 16px;
+    }
+    #objectives h2, #topics h2{
+      padding: 25px 0 15px 0;
+    }
+    .objectives-header{
+      width: 90%;
+    }
+    #objectives ul {
+      width: 90%;
+      padding-bottom: 10px;
+      font-size: 12px;
+    }
+    #objectives ul li {
+      padding: 5px;
+      width: 30%;
+      height: 250px;
+    }
+    #topics ul{
+      width: 90%;
+      padding: 10px 0 35px 0;
+      font-size: 14px;
+    }
+  
+    #topics ul li {
+      padding: 5px;
+    }
+  .sponsor-grid {
+    width: 90%;
+  }
+  .sponsor-header {
+    padding-top: 20px;
+  }
+  .sponsor-header h2{
+    padding: 25px 20px 15px 20px;
+  }
+  .sponsor-grid p{
+    padding: 10px;
+    font-size: 14px;
+  }
+  .sponsor-logos {
+    gap: 20px;
+    padding: 20px 0;
+  }
 }
