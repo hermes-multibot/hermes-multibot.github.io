@@ -44,6 +44,17 @@
     visibility: hidden;
 }
 
+#basic-info .media{
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding: 10px;
+  width: 66%;
+}
+
+#basic-info .media img {
+  padding: 10px;
+}
+
 .details-grid{
     display: flex;
     flex-flow: row wrap;

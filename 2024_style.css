@@ -3,6 +3,7 @@
 :root {
   --hermes-24-magenta: #BC244A;
   --hermes-24-darkblue: #052240;
+  --hermes-24-coolblue: #004B6B;
   --hermes-24-lightblue: #95DEFF;
 }
 
@@ -174,11 +175,11 @@ button:hover {
 
   #program a{
     text-decoration: none;
-    color:var(--hermes-pink);
+    color:var(--hermes-24-coolblue);
   }
 
   #program a:hover{
-    color: var(--hermes-hover);
+    color: var(--hermes-24-lightblue);
   }
 
   .program-grid {
@@ -195,21 +196,21 @@ button:hover {
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    border-bottom: 2px solid var(--hermes-green);
+    border-bottom: 2px solid var(--hermes-24-magenta);
   }
 
   .pgi-session {
     padding: 20px 0;
     font-size: 22px;
     font-weight: bold;
-    color: var(--hermes-pink);
+    color: var(--hermes-24-coolblue);
   }
 
   .pgi-session-cfp {
     padding: 10px 0;
     font-size: 22px;
     font-weight: bold;
-    color: var(--hermes-green);
+    color: var(--hermes-24-magenta);
   }
 
   .pgi-chair {
@@ -238,7 +239,7 @@ button:hover {
 
   .pgi-media {
     font-weight: bold;
-    color: var(--hermes-pink);
+    color: var(--hermes-24-coolblue);
   }
 
   .pgi-break {
