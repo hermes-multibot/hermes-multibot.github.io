@@ -64,10 +64,22 @@ button:hover {
 
 #scope {
   background-color: var(--hermes-text);
-  /* background-image: url("./img/robots.jpg");
+  background-image: url("./img/2024/dlr_arches2.png");
+  background-blend-mode: lighten;
+  /*  normal	This is default. Sets the blending mode to normal	
+        multiply	Sets the blending mode to multiply	
+        screen	Sets the blending mode to screen	
+        overlay	Sets the blending mode to overlay	
+        darken	Sets the blending mode to darken	
+        lighten	Sets the blending mode to lighten	
+        color-dodge	Sets the blending mode to color-dodge	
+        saturation	Sets the blending mode to saturation	
+        color	Sets the blending mode to color	
+        luminosity	Sets the blending mode to luminosity
+    */
   background-size: cover;
-  background-position: center; */
-  color: white;
+  background-position: center;
+  color: black;
   height: auto;
   width: 100%;
   display: flex;
@@ -90,7 +102,7 @@ button:hover {
 
 #scope .scope-text p{
   padding: 10px 0;
-  text-shadow: 1px 1px var(--hermes-text);
+  /* text-shadow: 1px 1px var(--hermes-text); */
   text-align: center;
 }
 
