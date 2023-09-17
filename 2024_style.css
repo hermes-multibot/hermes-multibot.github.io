@@ -95,8 +95,8 @@ button:hover {
   width: 66%;
 }
 
-#scope .scope-text h4{
-  text-transform: uppercase;
+#scope .scope-text h2{
+  color: var(--hermes-text);
   margin: 10px 0;
 }
 
