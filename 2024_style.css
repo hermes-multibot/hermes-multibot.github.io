@@ -418,12 +418,12 @@ button:hover {
     height: 250px;
   }
 
-  #topics ul{
+  #topics ul, ol{
     width: 66%;
     padding: 20px 0 35px 0;
   }
 
-  #topics ul li {
+  #topics ul li, ol li {
     padding: 5px;
   }
 
@@ -535,10 +535,21 @@ button:hover {
       padding: 10px 0 35px 0;
       font-size: 14px;
     }
+
+    #topics ol{
+      width: 90%;
+      padding: 10px 0 35px 0;
+      font-size: 14px;
+    }
   
     #topics ul li {
       padding: 5px;
     }
+
+    #topics ol li {
+      padding: 5px;
+    }
+
   .sponsor-grid {
     width: 90%;
   }
