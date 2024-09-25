@@ -75,9 +75,9 @@ button:hover {
 
 
 #scope {
-  background-color: var(--hermes-text);
-  background-image: url("./img/2024/dlr_arches2.png");
-  background-blend-mode: lighten;
+  background-color: var(--hermes-25-futuredusk);
+  background-image: url("./img/2025/zebro.jpg");
+  background-blend-mode: multiply;
   /*  normal	This is default. Sets the blending mode to normal	
         multiply	Sets the blending mode to multiply	
         screen	Sets the blending mode to screen	
@@ -89,9 +89,9 @@ button:hover {
         color	Sets the blending mode to color	
         luminosity	Sets the blending mode to luminosity
     */
-  background-size: cover;
+  background-size:cover;
   background-position: center;
-  color: black;
+  color: var(--hermes-25-honeydew);
   height: auto;
   width: 100%;
   display: flex;
@@ -108,7 +108,7 @@ button:hover {
 }
 
 #scope .scope-text h2{
-  color: var(--hermes-text);
+  color: var(--hermes-25-honeydew);
   margin: 10px 0;
 }
 
@@ -170,13 +170,14 @@ button:hover {
     flex-flow: column; 
     justify-content: flex-start;
     align-items: center;
-    background-image: url(./img/2024/speakers-bg.svg);
+    background-image: url(./img/2025/speakers-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
   }
 
   #invited-speakers h2{
+    margin-top: 50px;
     padding: 35px 0 15px 0;
   }
 
@@ -185,6 +186,9 @@ button:hover {
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .speakers-grid-item {
@@ -196,6 +200,7 @@ button:hover {
     padding: 10px;
     width: 250px;
     height: 350px;
+    margin-bottom: 10px;
   }
 
   .sgi-pic img {
@@ -259,14 +264,14 @@ button:hover {
     padding: 20px 0;
     font-size: 22px;
     font-weight: bold;
-    color: var(--hermes-25-honeydew);
+    color: var(--hermes-25-futuredusk);
 }
 
   .pgi-session-cfp {
     padding: 10px 0;
     font-size: 22px;
     font-weight: bold;
-    color: var(--hermes-25-futuredusk);
+    color: var(--hermes-25-thulianpink);
   }
 
   .pgi-chair {
@@ -369,13 +374,14 @@ button:hover {
     align-items: center;
     text-align: center;
     color: var(--hermes-bg);
-    text-shadow: 1px 1px var(--hermes-text);
+    font-weight: bold;
+    /* text-shadow: 1px 1px var(--hermes-text);*/
     width: 100%;
-    background-image: linear-gradient(var(--hermes-25-futuredusk),var(--hermes-25-celadon)), url(./img/2024/yokohama_night.jpg);
-    /*  linear-gradient(var(--hermes-25-futuredusk),var(--hermes-25-celadon)), #BEE5BF
+    background-image: linear-gradient(var(--hermes-25-thulianpink),var(--hermes-25-futuredusk)), url(./img/2025/atlanta.jpg);
+    /*  linear-gradient(var(--hermes-25-futuredusk),var(--hermes-25-celadon)), */
 
 
-    background-blend-mode: darken;
+    background-blend-mode: multiply;
     /*  normal	This is default. Sets the blending mode to normal	
         multiply	Sets the blending mode to multiply	
         screen	Sets the blending mode to screen	
@@ -400,13 +406,26 @@ button:hover {
     width: 100%;
   }
 
-  #objectives h2, #topics h2{
+  #objectives h2{
     padding: 35px 0 15px 0;
+    color: var(--hermes-25-honeydew);
+  }
+
+  #topics h2{
+    padding: 35px 0 15px 0;
+    color: black;
   }
 
   .objectives-header{
     width: 66%;
     padding: 15px 0 30px 0;
+    color: var(--hermes-25-honeydew);
+  }
+
+  .topics-header{
+    width: 66%;
+    padding: 15px 0 30px 0;
+    color: black;
   }
 
   #objectives ul {
@@ -418,6 +437,7 @@ button:hover {
     align-items: center;
     gap: 0;
     padding-bottom: 40px;
+    color: var(--hermes-25-honeydew);
   }
   
   #objectives ul li {

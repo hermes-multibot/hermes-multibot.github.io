@@ -177,6 +177,7 @@ button:hover {
   }
 
   #invited-speakers h2{
+    margin-top: 50px;
     padding: 35px 0 15px 0;
   }
 
@@ -185,6 +186,9 @@ button:hover {
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .speakers-grid-item {
@@ -196,6 +200,7 @@ button:hover {
     padding: 10px;
     width: 250px;
     height: 350px;
+    margin-bottom: 10px;
   }
 
   .sgi-pic img {
