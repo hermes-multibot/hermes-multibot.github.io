@@ -104,7 +104,7 @@ button:hover {
 
 #scope .scope-text {
   margin: 20px 0;
-  width: 66%;
+  width: 80%;
 }
 
 #scope .scope-text h2{
@@ -438,6 +438,7 @@ button:hover {
     gap: 0;
     padding-bottom: 40px;
     color: var(--hermes-25-honeydew);
+    margin-bottom: 10%;
   }
   
   #objectives ul li {
